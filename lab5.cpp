@@ -1,28 +1,3 @@
-/*
- * lab5.cpp
- *
- *  Created on: Mar 14, 2016
- *      Author: Tavish
- */
-/*
- * skeleton.cpp
- *
- * written by Dai Zuozhuo and Yu Chen for the course comp2011, HKUST.
- * contact via: ychenbh@ust.hk
- *
- *
- * This piece of code is the skeleton code for Lab 5.
- * Complete the following code and finish the task specified.
- * In order to use this file in eclipse, just create a normal
- * project and add a source file as usual. Copy and paste the
- * entire file to Eclipse.
- *
- * Please don't open it by double-click the file at CSE lab,
- * it will open the Microsoft Visual Studio Instead.
- *
- * You can add more functions into the file.
- */
-
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -120,10 +95,6 @@ void printBoard(const char board[][9]) {
     cout << endl;
 }
 
-// TODO: Define and implement a recursive helper function
-// e.g. bool solvesSudokuHelper(char board[][9], ...)
-// the helper function will solve Sudoku by recursion
-// if Sudoku is solved, return true, otherwise return false
 bool solveSudokuHelper(char board[][9],int num_start)
 {
 	if(isSolvedSudoku(board))
@@ -155,13 +126,7 @@ bool solveSudokuHelper(char board[][9],int num_start)
 	return false;
 }
 
-
-//TODO: Solve Sudoku by calling a recursive helper function.
 void solveSudoku(char board[][9]) {
-	/*TODO:
-	 * Call a helper function, e.g. solveSudokuHelper(board,...)
-	 * the helper function solves Sudoku by recursion
-	 */
 	solveSudokuHelper(board,0);
 	cout<<"results"<<endl;
 	printBoard(board);
