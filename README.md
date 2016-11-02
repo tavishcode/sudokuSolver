@@ -1,7 +1,7 @@
 # Sudoku Solver
 ### A sudoku puzzle solver utilizing a recursive backtracking algorithm
 
-Deeveloped for a course exercise on recursion
+Developed for a course exercise on recursion
 
 ![initializing sudoku](initialized.png)
 
